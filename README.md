@@ -28,7 +28,7 @@ Welcome to follow and star!
 
 The end-to-end driving methods aim at building a drive model that at each timestamp maps sensor readings (RGB & LiDAR), high-level navigational command, and vehicle state to raw control command. Most of the works are realized on the CARLA which is an open-source urban simulator for autonomous driving research. The other simulators include [Sumo](https://www.eclipse.org/sumo/) , [MetaDrive](https://github.com/metadriverse/metadrive) and [SMARTS](https://simfactor.pl/our-offer/driver-training-solutions/smart-simulator/?lang=en) . The end-to-end driving methods can be divided into two mainstreams: imitation learning and reinforcement learning.
 
-<img src="assets/pipeline.pdf" height="400">
+<img src="assets/pipeline.png" height="400">
 
 
 ## Papers
