@@ -21,12 +21,15 @@ Welcome to follow and star!
   - [CoRL 2021](#CoRL-2021) 
   - [T-PAMI](#T-PAMI) 
   - [Arxiv](#arxiv)
+  - [Others](#others)
 - [Contributing](#contributing)
 
 
 ## An Overview of End-to-End Driving Method
 
-The end-to-end driving methods aim at building a drive model that at each timestamp maps sensor readings (RGB & LiDAR), high-level navigational command, and vehicle state to raw control command. Most of the works are realized on the CARLA which is an open-source urban simulator for autonomous driving research. The other simulators include [Sumo](https://www.eclipse.org/sumo/) , [MetaDrive](https://github.com/metadriverse/metadrive) and [SMARTS](https://simfactor.pl/our-offer/driver-training-solutions/smart-simulator/?lang=en) . The end-to-end driving methods can be divided into two mainstreams: imitation learning and reinforcement learning.
+The end-to-end driving methods aim at building a drive model that at each timestamp maps sensor readings (RGB & LiDAR), high-level navigational command, and vehicle state to raw control command. The raw control command usually includes steering, throttle and brake. Based on the command, the autonomous vehicle can drive from the start point to the goal point without collisions and violation of traffic rules. The traditional modular pipeline uses many independent modules, such as preception, localizition, scene understanding, behaviour prediction and path planing, etc. Each of these modules is designed, trained and evaluted for its own purpose. In contrast, the end-to-end methods go from the sensor input to the raw control, skipping everything in between. Most of the works are realized on the CARLA which is an open-source urban simulator for autonomous driving research. The simulator provides open digital assets (urban layouts, buildings, vehicles) that were created for this purpose ,and supports flexible specification of sensor suites and environmental conditions.  The other simulators include [Sumo](https://www.eclipse.org/sumo/) , [MetaDrive](https://github.com/metadriverse/metadrive) and [SMARTS](https://simfactor.pour-offer/driver-training-solutions/smart-simulator/?lang=en) . 
+
+The recent end-to-end driving methods can be divided into two mainstreams: imitation learning and reinforcement learning. Reinforcement learning (RL) is one of the most interesting areas of machine learning, where an agent interacts with an environment by following a policy. In each state of the environment, it takes action based on the policy, and as a result, receives a reward and transitions to a new state. The goal of RL is to learn an optimal policy which maximizes the long-term cumulative rewards.  In imitation learning instead of trying to learn from the sparse rewards or manually specifying a reward function, an expert (typically a human) provides us with a set of demonstrations. The agent then tries to learn the optimal policy by following, imitating the expert’s decisions.
 
 <img src="assets/pipeline.png" height="350">
 
@@ -158,6 +161,52 @@ format:
 	- Tong Zhou, Letian Wang, Ruobing Chen, Wenshuo Wang, Yu Liu
 	- Key: reinforcement learning, exploration, motion primitive
 	- Env: [MetaDrive](https://github.com/metadriverse/metadrive)
+- [ChauffeurNet: Learning to Drive by Imitating the Best and Synthesizing the Worst](https://arxiv.org/abs/1812.03079)
+    - Mayank Bansal, Alex Krizhevsky, Abhijit Ogale
+    - Key: imitation learning, synthesized data, mid-level representation
+    - Env: Offline replays
+- [Learning to Drive in a Day](https://arxiv.org/abs/1807.00412)
+    - Alex Kendall, Jeffrey Hawke, David Janz, Przemyslaw Mazur, Daniele Reda, John-Mark Allen, Vinh-Dieu Lam, Alex Bewley, Amar Shah
+    - Key: reinforcement learning, model-free, efficiency
+    - Env: Private driving simulator, Real-world driving
+
+### Others
+- [End-to-end Learning of Driving Models from Large-scale Video Datasets](https://arxiv.org/abs/1807.00412)
+    - Huazhe Xu, Yang Gao, Fisher Yu, Trevor Darrell
+    - Key: multi-modal, imitation learning, large-scale video dataset 
+    - Env: The Berkeley DeepDrive Video Dataset
+- [Explaining Autonomous Driving by Learning End-to-End Visual Attention](https://arxiv.org/abs/2006.03347)
+    - Luca Cultrera, Lorenzo Seidenari, Federico Becattini, Pietro Pala, Alberto Del Bimbo
+    - Key: reinforcement learning, attention, multi-head network
+    - Env: [CARLA](https://carla.org/)
+- [Multimodal End-to-End Autonomous Driving](https://arxiv.org/abs/1906.03199)
+    - Yi Xiao, Felipe Codevilla, Akhil Gurram, Onay Urfalioglu, Antonio M. López
+    - Key: multi-modal, modular pipeline
+    - Env: [CARLA](https://carla.org/)
+- [Driving in Dense Traffic with Model-Free Reinforcement Learning](ihttps://arxiv.org/abs/1909.06710)
+    - Dhruv Mauria Saxena, Sangjae Bae, Alireza Nakhaei, Kikuo Fujimura, Maxim Likhachev
+    - Key: reinforcement learning, model free, dense traffic
+    - Env: [Automotive Driving Models](https://github.com/sisl/AutomotiveDrivingModels.jl/)
+- [Urban Driving with Conditional Imitation Learning](https://arxiv.org/abs/1912.00177) 
+    - Jeffrey Hawke, Richard Shen, Corina Gurau, Siddharth Sharma, Daniele Reda, Nikolay Nikolov, Przemyslaw Mazur, Sean Micklethwaite, Nicolas Griffiths, Amar Shah, Alex Kendall
+    - Key: imitation learning, representation learning, conditional branch
+    - Env: Real-world driving
+- [FlowDriveNet: An End-to-End Network for Learning Driving Policies from Image Optical Flow and LiDAR Point Flow](https://shuai-wang.netlify.app/files/FlowDriveNet.pdf)
+    - Shuai Wang, Jiahu Qin, Menglin Li and Yaonan Wang
+    - Key: optical flow, lidar flow, temporal fusion
+    - Env: CH2-LiDAR dataset
+- [Grounding Human-to-Vehicle Advice for Self-driving Vehicles](https://arxiv.org/abs/1911.06978) 
+    - Jinkyu Kim, Teruhisa Misu, Yi-Ting Chen, Ashish Tawari, John Canny
+    - Key: natural language advice, attention
+    - Env: Honda Research Institute-Advice Dataset (HAD)
+- [Learning Interpretable End-to-End Vision-Based Motion Planning for Autonomous Driving with Optical Flow Distillation](https://arxiv.org/abs/2104.12861)
+    - Hengli Wang, Peide Cai, Yuxiang Sun, Lujia Wang, Ming Liu
+    - Key: interpretable, optical flow, distillation
+    - Env: nuScenes, [CARLA](https://carla.org/)
+- [Learning a Decision Module by Imitating Driver’s Control Behaviors Junning](https://arxiv.org/abs/1912.00191)
+    - Junning Huang, Sirui Xie, Jiankai Sun, Qiurui Ma, Chunxiao Liu, Jianping Shi, Dahua Lin, Bolei Zhou
+    - Key: hybrid framework, imitation learning, safety driving
+    - Env: [CARLA](https://carla.org/)
 
 ## Contributing
 Our purpose is to make this repo even better. If you are interested in contributing, please refer to [HERE](CONTRIBUTING.md) for instructions in contribution.
