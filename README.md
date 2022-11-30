@@ -1,4 +1,4 @@
-# Awesome End-to-End Autonomous driving
+# Awesome End-to-End Autonomous Driving
 
 This is a collection of research papers for **End-to-End Autonomous driving**.
 And the repository will be continuously updated to track the latest update of E2E driving.
