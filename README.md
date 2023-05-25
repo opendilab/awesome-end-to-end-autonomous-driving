@@ -46,11 +46,16 @@ format:
 ```
 
 ### CVPR 2023
-- [ReasonNet: End-to-End Driving with Temporal and Global Reasoning]() (**<font color="red">Ours!!!</font>**)
+- [ReasonNet: End-to-End Driving with Temporal and Global Reasoning](https://arxiv.org/abs/2305.10507) (**<font color="red">Ours!!!</font>**)
 	- Hao Shao, Letian Wang, Ruobing Chen, Steven L. Waslander, Hongsheng Li, Yu Liu
 	- Key: temporal reasoning, global reasoning, memory bank, occupancy prediction
 	- Env: [CARLA](https://carla.org/)
 	
+- [ThinkTwice: A SOTA Decoder for End-to-End Autonomous Driving under BEV](https://arxiv.org/abs/2305.06242)
+	- Xiaosong Jia, Penghao Wu, Li Chen, Jiangwei Xie, Conghui He, Junchi Yan, Hongyang Li
+	- Key: coarse-to-fine prediction, bev, cascaded framework
+	- Env: [CARLA](https://carla.org/)
+
 - [Planning-oriented Autonomous Driving](https://arxiv.org/abs/2212.10156)
 	- Yihan Hu, Jiazhi Yang, Li Chen, Keyu Li, Chonghao Sima, Xizhou Zhu, Siqi Chai, Senyao Du, Tianwei Lin, Wenhai Wang, Lewei Lu, Xiaosong Jia, Qiang Liu, Jifeng Dai, Yu Qiao, Hongyang Li
 	- Key: full-stack tasks, unified model, feature abstraction
