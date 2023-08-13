@@ -45,6 +45,21 @@ format:
   - experiment environment
 ```
 
+### NEWs
+
+- [Hidden Biases of End-to-End Driving Models](https://arxiv.org/abs/2306.07957)
+  	- Bernhard Jaeger, Kashyap Chitta, Andreas Geiger
+  	- ICCV 2023
+ 
+- [End-to-End Autonomous Driving: Challenges and Frontiers](https://github.com/OpenDriveLab/End-to-end-Autonomous-Driving/blob/main)
+	- Li Chen, Penghao Wu, Kashyap Chitta, Bernhard Jaeger, Andreas Geiger, Hongyang Li
+   	- Survey, arXiv
+
+- [Efficient Reinforcement Learning for Autonomous Driving with Parameterized Skills and Priors](https://arxiv.org/abs/2305.04412)
+  	- Letian Wang, Jie Liu, Hao Shao, Wenshuo Wang, Ruobing Chen, Yu Liu, Steven L. Waslander
+  	- RSS 2023
+   
+
 ### CVPR 2023
 - [ReasonNet: End-to-End Driving with Temporal and Global Reasoning](https://arxiv.org/abs/2305.10507) (**<font color="red">Ours!!!</font>**)
 	- Hao Shao, Letian Wang, Ruobing Chen, Steven L. Waslander, Hongsheng Li, Yu Liu
