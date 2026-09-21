@@ -10,6 +10,7 @@ Welcome to follow and star!
 - [A Overview of End-to-End Driving Method](#a-Overview-of-End-to-End-Driving-Method)
 - [Papers](#papers)
 
+  - [ECCV 2026](#eccv-2026)
   - [CVPR 2023](#CVPR-2023) 
   - [ECCV 2022](#ECCV-2022) 
   - [ICLR 2022](#ICLR-2022) 
@@ -59,6 +60,13 @@ format:
   	- Letian Wang, Jie Liu, Hao Shao, Wenshuo Wang, Ruobing Chen, Yu Liu, Steven L. Waslander
   	- RSS 2023
    
+
+### ECCV 2026
+
+- [DriveVA: Video Action Models are Zero-Shot Drivers](https://link.springer.com/chapter/10.1007/978-3-032-37718-0_19) [[Code](https://github.com/xiaomi-mlab/DriveVA)]
+  - Mengmeng Liu, Diankun Zhang, Jiuming Liu, Jianfeng Cui, Hongwei Xie, Guang Chen, Hangjun Ye, Michael Ying Yang, Francesco Nex, Hao Cheng
+  - Key: world model, joint video-action generation, zero-shot autonomous driving
+  - Env: NAVSIM, nuScenes, Bench2Drive
 
 ### CVPR 2023
 - [ReasonNet: End-to-End Driving with Temporal and Global Reasoning](https://arxiv.org/abs/2305.10507) (**<font color="red">Ours!!!</font>**)
